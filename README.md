@@ -39,3 +39,5 @@ fars_map_state(39, 2013)
 ```
 
 ![](README-map-1.png)
+
+[!Project status badge](https://ci.appveyor.com/api/projects/status/daovsxh32wuptc7t?svg=true)
