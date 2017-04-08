@@ -16,3 +16,7 @@ Suggests: knitr,
     rmarkdown,
     testthat
 VignetteBuilder: knitr
+Imports: dplyr,
+    magrittr,
+    readr,
+    tidyr
