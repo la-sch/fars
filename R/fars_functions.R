@@ -12,8 +12,10 @@
 #' @importFrom dplyr tbl_df
 #'
 #' @examples
+#' \dontrun{
 #' setwd(system.file("extdata", package = "fars"))
 #' fars_read("accident_2013.csv.bz2")
+#' }
 #'
 #' @export
 fars_read <- function(filename) {
@@ -60,8 +62,10 @@ make_filename <- function(year) {
 #' @importFrom magrittr "%>%"
 #'
 #' @examples
+#' \dontrun{
 #' setwd(system.file("extdata", package = "fars"))
 #' fars_read_years(2013:2016)
+#' }
 #'
 #' @export
 fars_read_years <- function(years) {
@@ -94,8 +98,10 @@ fars_read_years <- function(years) {
 #' @importFrom magrittr "%>%"
 #'
 #' @examples
+#' \dontrun{
 #' setwd(system.file("extdata", package = "fars"))
 #' fars_summarize_years(2013:2016)
+#' }
 #'
 #' @export
 fars_summarize_years <- function(years) {
@@ -122,9 +128,11 @@ fars_summarize_years <- function(years) {
 #' @import maps
 #'
 #' @examples
+#' \dontrun{
 #' setwd(system.file("extdata", package = "fars"))
 #' fars_map_state(24, 2014)
 #' fars_map_state(39, 2013)
+#' }
 #'
 #' @export
 fars_map_state <- function(state.num, year) {

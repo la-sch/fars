@@ -17,7 +17,10 @@ This functions throws an error if a file for a given year does not exist
       or if a state is not contained in the dataset.
 }
 \examples{
+\dontrun{
+setwd(system.file("extdata", package = "fars"))
 fars_map_state(24, 2014)
 fars_map_state(39, 2013)
+}
 
 }

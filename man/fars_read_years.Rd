@@ -16,6 +16,9 @@ This function reads csv files for given \code{years}, extracts their months, and
 This functions throws a warning if a file for the given year does not exist.
 }
 \examples{
+\dontrun{
+setwd(system.file("extdata", package = "fars"))
 fars_read_years(2013:2016)
+}
 
 }

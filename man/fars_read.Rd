@@ -16,6 +16,9 @@ This function reads a csv file, zipped or unzipped, and stores it in a tibble.
 This functions throws an error if the file does not exist.
 }
 \examples{
+\dontrun{
+setwd(system.file("extdata", package = "fars"))
 fars_read("accident_2013.csv.bz2")
+}
 
 }
