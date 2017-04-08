@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# Introduction to fars
+
+The `fars` package analyses data from the US National Highway Traffic Safety Administration's [Fatality Analysis Reporting System](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars), which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+## Summarize accidents
+
+If you are interested in the number of accidents per month and year, you can count them with the `fars_summarize_years` function. You only need to provide the `years` of interest. The function will create the `filename`s using the `make_filename` function, read in the files from your current working directory using the `fars_read` function, and finally summarize the data.
+
+```{r setup, include=FALSE}
+require("knitr")
+require("fars")
+opts_knit$set(root.dir = system.file("extdata", package = "fars"))
+```
+
+```{r summarize, echo=TRUE}
+fars_summarize_years(2013:2015)
+```
+
+## Map accidents
+
+In order to display the point locations of accidents for a given state `state.num` and `year`, you can use the `fars_map_state` function.
+
+```{r map, echo=TRUE}
+fars_map_state(39, 2013)
+```
