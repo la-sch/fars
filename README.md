@@ -40,6 +40,8 @@ fars_map_state(39, 2013)
 
 ![](README-map-1.png)
 
-[AppVeyor badge](https://ci.appveyor.com/api/projects/status/daovsxh32wuptc7t?svg=true)
+AppVeyor [![Build status](https://ci.appveyor.com/api/projects/status/daovsxh32wuptc7t/branch/master?svg=true)](https://ci.appveyor.com/project/la-sch/fars/branch/master)
 
-[Travis badge](https://travis-ci.org/la-sch/fars)
+Travis [![Travis-CI Build Status](https://travis-ci.org/la-sch/fars.svg?branch=master)](https://travis-ci.org/la-sch/fars)
+
+[Travis log](https://travis-ci.org/la-sch/fars)
